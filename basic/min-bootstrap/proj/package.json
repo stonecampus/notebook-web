@@ -1,0 +1,13 @@
+{
+  "name": "min-bootstrap",
+  "version": "1.0.0",
+  "description": "Minimal express website with bootstrap",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

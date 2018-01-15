@@ -1,0 +1,4 @@
+{
+    "mocha.files.glob": "*/test/**/*.js",
+    "javascript.validate.enable": false
+}

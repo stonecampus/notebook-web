@@ -1,0 +1,18 @@
+
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+html.no-js body::before {
+  content: 'Javascript is disabled or not ready yet';
+}
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}

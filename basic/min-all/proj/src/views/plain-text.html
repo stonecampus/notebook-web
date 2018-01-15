@@ -1,0 +1,23 @@
+{% extends './site.html' %}
+
+{% block js %}
+  <script src="/assets/app.bundle.js"></script>
+{% endblock %}
+
+{% block content %}
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li class="active">Plain Text</li>
+</ol>
+
+<div class="container-fluid">
+  <h1>Plain Text</h1>
+
+  <textarea class="form-control" rows="3"></textarea>
+
+  <h2>
+    <button id="save" class="btn btn-primary">Save</button>
+    <button id="load" class="btn btn-default">Load</button>
+  </h2>
+</div>
+{% endblock %}

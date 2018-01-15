@@ -1,0 +1,9 @@
+{
+  "name": "notebook-web",
+  "version": "0.0.1",
+  "description": "Stone Campus web development notebook",
+  "main": "",
+  "repository": "https://github.com/stonecampus/notebook-web",
+  "author": "stonecampus <stone@mytraces.net>",
+  "license": "MIT"
+}

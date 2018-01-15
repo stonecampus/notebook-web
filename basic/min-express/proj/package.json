@@ -1,0 +1,11 @@
+{
+  "name": "min-express",
+  "version": "1.0.0",
+  "description": "minimal express",
+  "main": "app.js",
+  "author": "jy",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
