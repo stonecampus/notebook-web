@@ -11,10 +11,12 @@ module.exports = function (app, env) {
     devConfig: devConfig,
     webpack: require('../webpack.config.js')(env),
     browserSync: {
-      port: 9001,
-      proxy: 'localhost:' + 9000,
-      ui: { port: 9002 },
-      open: false,
+      port: devConfig.port + 1,
+      proxy: 'localhost:' + devConfig.port,
+      ui: { port: devConfig.port + 2 },
+      // online: false,
+      // open: false,
+      // notify: false,
       files: [
         {
           match: [

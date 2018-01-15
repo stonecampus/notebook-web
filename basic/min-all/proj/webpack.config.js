@@ -13,7 +13,6 @@ module.exports = (env = {}) => {
 
   return {
     entry: {
-      immediate: join(devConfig.webpackSource, 'js', 'immediate.js'),
       app: join(devConfig.webpackSource, 'js', 'app.js')
     },
     output: {
@@ -23,10 +22,6 @@ module.exports = (env = {}) => {
     },
     plugins: [
       new ExtractTextPlugin('[name].css'),
-      // new ExtractTextPlugin({
-      //   filename: 'site.css'
-      //   allChunks: true
-      // }),
       new webpack.NoEmitOnErrorsPlugin(),
 
       isDev && new webpack.LoaderOptionsPlugin({ debug: true }),

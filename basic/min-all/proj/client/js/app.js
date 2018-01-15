@@ -1,5 +1,7 @@
 require('../less/site.less');
 
+require('./immediate.js');
+
 var PlainText = require('./plain-text');
 
 document.addEventListener('DOMContentLoaded', function (event) {

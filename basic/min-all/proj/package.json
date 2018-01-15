@@ -17,7 +17,9 @@
     "lint:js": "semistandard src client test",
     "lint:css": "stylelint --config etc/stylelint.config.js client/less/**/*.less",
     "test": "NODE_ENV=test DOT_ENV=test/env.test mocha",
-    "testw": "NODE_ENV=test DOT_ENV=test/env.test mocha --watch"
+    "testw": "NODE_ENV=test DOT_ENV=test/env.test mocha --watch",
+    "precommit": "npm run lint",
+    "prepush": "npm run test"
   },
   "license": "MIT",
   "author": "stonecampus <stone@mytraces.net>",
@@ -28,7 +30,8 @@
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "express-favicon": "^2.0.0",
-    "nunjucks": "^3.0.1"
+    "nunjucks": "^3.0.1",
+    "sclib": "^0.0.1"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
